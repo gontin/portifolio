@@ -1,6 +1,5 @@
-import Image from "next/image";
-import PixelBlast from "@/components/PixelBlast";
-interface NavlinkProps {
+export default function Navbar() { 
+  interface NavlinkProps {
   href: string;
   children: React.ReactNode;
 }
@@ -15,12 +14,7 @@ const Navlink = ({href, children}: NavlinkProps) => {
     {children}
   </a>)
 }
-export default function Home() {
-
-
   return (
-  
-<div style={{ width: '100%', height: '600px', position: 'relative' }}>
   <nav className="grid grid-cols-3 items-center w-full p-4">
     <div></div>
     <div className="flex justify-center gap-4">
@@ -36,26 +30,5 @@ export default function Home() {
       </a>
     </div>
   </nav>
-  <PixelBlast
-    variant="square"
-    pixelSize={3}
-    color="#77767b"
-    patternScale={4.25}
-    patternDensity={0.95}
-    pixelSizeJitter={1}
-    enableRipples
-    rippleSpeed={0.4}
-    rippleThickness={0.12}
-    rippleIntensityScale={1.5}
-    liquid={false}
-    liquidStrength={0.12}
-    liquidRadius={1.2}
-    liquidWobbleSpeed={5}
-    speed={1}
-    edgeFade={0.25}
-    transparent
-  />
 
-</div>
-  );
-}
+)}
