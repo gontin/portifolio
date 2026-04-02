@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import localfont from 'next/font/local';
+import Navbar from '@/components/Navbar'
 
 const nippo = localfont({
   src:'../public/fonts/Nippo-Variable.woff2',
@@ -33,7 +34,10 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${nippo.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar></Navbar>
+        {children}
+        </body>
     </html>
   );
 }
