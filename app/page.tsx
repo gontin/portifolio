@@ -1,34 +1,46 @@
 import PixelBlast from "@/components/PixelBlast";
+import HeroBanner from "@/app/sections/HeroBanner";
+import PixelCard from "@/components/PixelCard";
+import Projetos from "@/app/sections/Projetos";
+import Navbar from "@/app/sections/Navbar";
+import EfeitoDigitacao from "@/components/EfeitoDigitacao";
+
 export default function Home() {
 
 
   return (  
-<div style={{ width: '100%', height: '600px', position: 'relative' }}>
-  <div className="absolute inset-0 z-0">
-    <PixelBlast
-      variant="square"
-      pixelSize={3}
-      color="#77767b"
-      patternScale={4.25}
-      patternDensity={0.95}
-      pixelSizeJitter={1}
-      enableRipples
-      rippleSpeed={0.4}
-      rippleThickness={0.12}
-      rippleIntensityScale={1.5}
-      liquid={false}
-      liquidStrength={0.12}
-      liquidRadius={1.2}
-      liquidWobbleSpeed={5}
-      speed={1}
-      edgeFade={0.25}
-      transparent
+<main>
+  <Navbar></Navbar>
+  <HeroBanner>
+    <EfeitoDigitacao 
+      textos={[
+        "> Olá, já bebeu água hoje?",
+        "> Que calor.",
+        "> Fique à vontade para explorar.",
+        "> Lembre de beber água :D",
+        "> Miau.",
+        "> Bolo gato yuumi.",
+        "> Miau.",
+      ]}
+      velocidade={40} 
+      tempoPausa={2500} // Fica 2.5s na tela antes de apagar
+      atrasoInicial={1500}
+      className="text-l md:text-base text-zinc-100 mt-6"
     />
-  </div>
-  <div className="relative z-10">
-    <h1>awawawawaw</h1>
-  </div>
+  </HeroBanner>
 
-</div>
+  <section>
+    <Projetos></Projetos>
+  </section>
+
+  <section>
+    {/* Habilidades */}
+  </section>
+
+  <section>
+    {/* footer */}
+  </section>
+  
+</main>
   );
 }

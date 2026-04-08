@@ -7,7 +7,7 @@ interface NavlinkProps {
 
 const Navlink = ({href, children}: NavlinkProps) => {
   return (
-  <Link href={href} className="flex flex-col items-center group text-3xl">
+  <Link href={href} className="flex flex-col items-center group text-3xl hover:text-emerald-400 transition-colors">
     {children}
   </Link>)
 
