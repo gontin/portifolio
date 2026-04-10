@@ -20,12 +20,12 @@ export default function Home() {
         "> Lembre de beber água :D",
         "> Miau.",
         "> Bolo gato yuumi.",
-        "> Miau.",
+        "> Miau.", 
       ]}
       velocidade={40} 
       tempoPausa={2500} // Fica 2.5s na tela antes de apagar
       atrasoInicial={1500}
-      className="text-l md:text-base text-zinc-100 mt-6"
+      className="text-3xl"
     />
   </HeroBanner>
 

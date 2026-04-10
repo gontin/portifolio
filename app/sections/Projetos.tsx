@@ -18,7 +18,7 @@ export default function Projetos() {
                     Um bot assistente integrado com inteligência artificial para moderação, diversão e gerenciamento do servidor.
                   </p>
                 </div>
-                <button className="bg-pink-600/20 hover:bg-pink-600/40 font-bold py-2 px-4 rounded border border-pink-500/50 transition-colors">
+                <button className="bg-gray-600/70 hover:bg-gray-600/90 font-bold py-2 px-4 rounded border border-white-500/50 transition-colors">
                   Ver Mais
                 </button>
               </div>
@@ -33,7 +33,7 @@ export default function Projetos() {
                     Uma visual novel focada em narrativa com mecânicas de RPG e uma estética em pixel art totalmente original.
                   </p>
                 </div>
-                <button className="bg-pink-600/20 hover:bg-pink-600/40 font-bold py-2 px-4 rounded border border-pink-500/50 transition-colors">
+                <button className="bg-gray-600/70 hover:bg-gray-600/90 font-bold py-2 px-4 rounded border border-white-500/50 transition-colors">
                   Ver Mais
                 </button>
               </div>
