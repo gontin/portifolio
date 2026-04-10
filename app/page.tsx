@@ -1,6 +1,4 @@
-import PixelBlast from "@/components/PixelBlast";
 import HeroBanner from "@/app/sections/HeroBanner";
-import PixelCard from "@/components/PixelCard";
 import Projetos from "@/app/sections/Projetos";
 import Navbar from "@/app/sections/Navbar";
 import EfeitoDigitacao from "@/components/EfeitoDigitacao";

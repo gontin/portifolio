@@ -3,7 +3,7 @@ import PixelCard from '@/components/PixelCard';
 export default function Projetos() {
   return (
 
-    <main className="flex flex-col min-h-screen bg-zinc-950 text-white">
+    <main className="flex flex-col min-h-screen text-white">
 
       <section id="projetos" className="w-full max-w-6xl mx-auto py-20 px-6">
         <h2 className="text-4xl font-bold mb-12 text-center">Meus Projetos</h2>
