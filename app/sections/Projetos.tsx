@@ -7,27 +7,40 @@ const MEUS_PROJETOS = [
   {
     id: 1,
     titulo: "Bot IA Discord",
-    descricaoCurta: "Assistente de servidor com personalidade gerada por IA.",
-    descricaoLonga: "Um bot completo focado em moderação, diversão e gerenciamento. Ele utiliza a API de IA para gerar respostas contextuais e interagir com os usuários de forma dinâmica, elevando o engajamento da comunidade.",
-    imagem: "/imagens/project_discordbot.PNG", 
-    tecnologias: ["Python", "Discord.py", "API Gemini", "SQLite"],
+    descricaoCurta: "Bot do discord para comunicação natural.",
+    descricaoLonga: "Um bot completo focado em comunicação natural. Ele utiliza uma API para se comunicar com o Character.ai, gerando respostas escritas e via audio de acordo com um modelo customizável pelo usuario ou feito pela comunidade.",
+    imagem: "/imagens/project_discordbot.PNG",
+    tecnologias: ["Python", "Discord.py", "discord-ext-voice-recv", "PyCharacterAI", "SpeechRecognition", "SciPy & NumPy", "Scrapping"],
+    github:"https://github.com/gontin/CharAI"
   },
   {
     id: 2,
     titulo: "RPG Ren'Py",
-    descricaoCurta: "Visual novel narrativa com mecânicas de inventário e escolhas.",
-    descricaoLonga: "Um projeto autoral unindo arte em pixel e uma narrativa profunda. O jogo conta com um sistema de escolhas que afetam o mundo, mecânicas de inventário e diálogos ramificados, explorando temas de cuidado e introspecção.",
+    descricaoCurta: "Visual novel narrativa.",
+    descricaoLonga: "Em construção.",
     imagem: "/imagens/renpy_project.PNG",
-    tecnologias: ["Ren'Py", "Python", "Krita", "Pixel Art"],
+    tecnologias: ["Ren'Py", "Python", "UX/UI", "Krita", "Pixel Art"],
+    github:"https://github.com/gontin/meow-game"
   },
   {
     id: 3,
     titulo: "InfinityBoard",
-    descricaoCurta: "Sistema de ensino gamificado com tutores virtuais.",
-    descricaoLonga: "Uma plataforma educacional completa focada em revolucionar o ensino nas escolas. O sistema integra inteligência artificial para auxiliar os alunos e professores, além de mecânicas de gamificação para manter o engajamento.",
+    descricaoCurta: "Sistema para a organização de funcionários da Infinity School.",
+    descricaoLonga: "Este é um sistema web desenvolvido com Django, voltado para organização e produtividade dos funcionários da Infinity School. A plataforma oferece um dashboard centralizado com ferramentas essenciais para o dia a dia dos colaboradores, como calendário, tarefas, links úteis, anotações e mais.",
     imagem: "https://placehold.co/600x400/111111/444444?text=DATA_CORE",
-    tecnologias: ["Next.js", "React", "Tailwind CSS", "Node.js"],
-  }
+    tecnologias: ["Python", "Django", "Google Cloud Console", "Javascript", "HTML/CSS"],
+    github: "https://github.com/gontin/infinityboard"
+  },
+  {
+    id: 4,
+    titulo: "Peace Machine",
+    descricaoCurta: "Escape Room educacional gamificado integrando interface web e hardware IoT.",
+    descricaoLonga: "Um projeto educacional imersivo que une engenharia de software e robótica. A plataforma conecta um web app interativo a uma estrutura física controlada por um microcontrolador ESP32. Os alunos resolvem desafios de matemática e lógica no tablet para gerar códigos. Ao inseri-los no terminal do jogo, requisições HTTP acionam motores servo via Wi-Fi para destrancar compartimentos reais, unindo tecnologia e metodologias ativas de forma inovadora.",
+    imagem: "https://placehold.co/600x400/111111/444444?text=PEACE_MACHINE",
+    tecnologias: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "C++", "ESP32", "Arduino"],
+    github: "https://github.com/gontin/Peace-machine"
+  },
+
 ];
 
 export default function Projetos() {
@@ -60,7 +73,7 @@ export default function Projetos() {
                   alt={projeto.titulo}
                   className="w-full h-full object-cover opacity-10 group-hover:opacity-30 group-hover:scale-105 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/90 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black via-black/90 to-transparent"></div>
               </div>
               
               {/* Topo do Card */}
@@ -98,7 +111,7 @@ export default function Projetos() {
 
       {/* MODAL (POP-UP) SEM BLUR, APENAS ESCURECIMENTO (bg-black/95) */}
       {projetoAberto && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 bg-black/95">
+        <div className="fixed inset-0 z-100 flex items-center justify-center p-4 sm:p-6 bg-black/95">
           
           <div className="relative w-full max-w-5xl max-h-[90vh] bg-black border border-zinc-700 flex flex-col md:flex-row overflow-y-auto custom-scrollbar">
             
@@ -155,6 +168,18 @@ export default function Projetos() {
                   ))}
                 </div>
               </div>
+                {projetoAberto.github && (
+                  <div className="mt-8 pt-6 border-t border-zinc-800">
+                    <a 
+                      href={projetoAberto.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="w-full py-3 bg-zinc-900 hover:bg-white hover:text-black text-white border border-zinc-700 transition-colors flex items-center justify-center gap-2 text-xs uppercase tracking-widest font-bold"
+                    >
+                      <span>[ Repositório do GitHub ]</span>
+                    </a>
+                  </div>
+                )}
 
             </div>
           </div>
