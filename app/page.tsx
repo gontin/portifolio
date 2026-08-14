@@ -12,13 +12,13 @@ export default function Home() {
   <HeroBanner>
     <EfeitoDigitacao 
       textos={[
-        "> Olá, já bebeu água hoje?",
-        "> Que calor.",
-        "> Fique à vontade para explorar.",
+        "> Olá, você já bebeu água hoje?",
+        "> Que calor do carai.",
+        "> Da uma explorada ai.",
         "> Lembre de beber água :D",
         "> Miau.",
-        "> Bolo gato yuumi.",
-        "> Miau.", 
+        "> Bolo de morango.",
+        "> Meow.", 
       ]}
       velocidade={40} 
       tempoPausa={2500} // Fica 2.5s na tela antes de apagar

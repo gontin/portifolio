@@ -18,7 +18,7 @@ const MEUS_PROJETOS = [
     titulo: "RPG Ren'Py",
     descricaoCurta: "Visual novel narrativa.",
     descricaoLonga: "Em construção.",
-    imagem: "/imagens/renpy_project.PNG",
+    imagem: "/imagens/renpy_project.png",
     tecnologias: ["Ren'Py", "Python", "UX/UI", "Krita", "Pixel Art"],
     github:"https://github.com/gontin/meow-game"
   },
@@ -27,7 +27,7 @@ const MEUS_PROJETOS = [
     titulo: "InfinityBoard",
     descricaoCurta: "Sistema para a organização de funcionários da Infinity School.",
     descricaoLonga: "Este é um sistema web desenvolvido com Django, voltado para organização e produtividade dos funcionários da Infinity School. A plataforma oferece um dashboard centralizado com ferramentas essenciais para o dia a dia dos colaboradores, como calendário, tarefas, links úteis, anotações e mais.",
-    imagem: "https://placehold.co/600x400/111111/444444?text=DATA_CORE",
+    imagem: "/imagens/infinityboard.png",
     tecnologias: ["Python", "Django", "Google Cloud Console", "Javascript", "HTML/CSS"],
     github: "https://github.com/gontin/infinityboard"
   },
@@ -36,7 +36,7 @@ const MEUS_PROJETOS = [
     titulo: "Peace Machine",
     descricaoCurta: "Escape Room educacional gamificado integrando interface web e hardware IoT.",
     descricaoLonga: "Um projeto educacional imersivo que une engenharia de software e robótica. A plataforma conecta um web app interativo a uma estrutura física controlada por um microcontrolador ESP32. Os alunos resolvem desafios de matemática e lógica no tablet para gerar códigos. Ao inseri-los no terminal do jogo, requisições HTTP acionam motores servo via Wi-Fi para destrancar compartimentos reais, unindo tecnologia e metodologias ativas de forma inovadora.",
-    imagem: "https://placehold.co/600x400/111111/444444?text=PEACE_MACHINE",
+    imagem: "/imagens/peace_machine.png",
     tecnologias: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "C++", "ESP32", "Arduino"],
     github: "https://github.com/gontin/Peace-machine"
   },
@@ -66,7 +66,7 @@ export default function Projetos() {
               className="group relative h-[400px] cursor-pointer border border-zinc-800 bg-zinc-950 overflow-hidden hover:border-zinc-400 transition-colors duration-300 flex flex-col justify-between"
               onClick={() => setProjetoAberto(projeto)}
             > 
-              {/* Imagem de Fundo do Card (Super sutil, como textura) */}
+              {/* Imagem de Fundo do Card */}
               <div className="absolute inset-0 z-0">
                 <img 
                   src={projeto.imagem} 
@@ -109,7 +109,7 @@ export default function Projetos() {
         </div>
       </section>
 
-      {/* MODAL (POP-UP) SEM BLUR, APENAS ESCURECIMENTO (bg-black/95) */}
+      {/* MODAL (POP-UP) */}
       {projetoAberto && (
         <div className="fixed inset-0 z-100 flex items-center justify-center p-4 sm:p-6 bg-black/95">
           
@@ -131,7 +131,6 @@ export default function Projetos() {
                 alt={projetoAberto.titulo}
                 className="w-full h-full object-cover opacity-70"
               />
-              {/* Efeito Scanline sutil na imagem do pop-up */}
               <div className="absolute inset-0 bg-[repeating-linear-gradient(transparent,transparent_2px,rgba(0,0,0,0.4)_3px,rgba(0,0,0,0.4)_3px)] opacity-50 pointer-events-none"></div>
             </div>
 
