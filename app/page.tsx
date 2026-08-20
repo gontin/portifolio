@@ -2,6 +2,9 @@ import HeroBanner from "@/app/sections/HeroBanner";
 import Projetos from "@/app/sections/Projetos";
 import Navbar from "@/app/sections/Navbar";
 import EfeitoDigitacao from "@/components/EfeitoDigitacao";
+import Experiencias from "./sections/Experiencias";
+import Formacao from "./sections/Formacao";
+import FadeIn from "@/components/FadeIn";
 
 export default function Home() {
 
@@ -28,7 +31,10 @@ export default function Home() {
   </HeroBanner>
 
   <section>
-    <Projetos></Projetos>
+    
+    <FadeIn><Projetos /></FadeIn>
+    <FadeIn><Experiencias /></FadeIn>
+    <FadeIn><Formacao /></FadeIn>
   </section>
 
   <section>
