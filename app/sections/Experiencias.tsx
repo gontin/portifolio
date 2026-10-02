@@ -1,5 +1,7 @@
 'use client';
 
+import { div } from "three/tsl";
+
 const EXPERIENCIAS = [
     {
         id: 1,
