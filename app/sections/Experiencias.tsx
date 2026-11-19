@@ -12,10 +12,10 @@ const EXPERIENCIAS = [
     },
     {
         id: 2,
-        cargo: "Tutor de turmas",
+        cargo: "Professor",
         empresa: "Kodland",
         periodo: "Jul 2026 - Presente",
-        descricao: "Em construção."
+        descricao: "Ministro aulas de programação focadas nas turmas de Python LVL1 e Python Pro. Guio os alunos desde os fundamentos da lógica de programação até o desenvolvimento de aplicações práticas utilizando frameworks e bibliotecas como Flask, Pygame e Discord.py."
     },
 ];
 
@@ -32,7 +32,6 @@ export default function Experiencias() {
       <div className="relative border-l border-zinc-800 ml-4 md:ml-6 space-y-12">
         {EXPERIENCIAS.map((exp) => (
           <div key={exp.id} className="relative pl-8 group">
-            {/* Marcador na linha do tempo */}
             <span className="absolute -left-[5px] top-1.5 h-2.5 w-2.5 bg-black border border-zinc-500 group-hover:bg-white group-hover:border-white transition-colors"></span>
             
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2 gap-2">
