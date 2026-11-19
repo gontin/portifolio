@@ -40,9 +40,4 @@ Na seção **Sobre (`API::NEKO_TERMINAL`)**, o sistema realiza requisições ass
 - **Three.js / Shaders:** Renderização gráfica do plano de fundo interativo no banner principal.
 
 ---
-
-## Como Executar Localmente
-
-1. Clone o repositório:
-```bash
-git clone [https://github.com/gontin/SEU-REPOSITORIO.git](https://github.com/gontin/SEU-REPOSITORIO.git)
+RODANDO EM: https://portifolio-nine-chi-98.vercel.app/
