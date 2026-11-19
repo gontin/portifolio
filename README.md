@@ -2,6 +2,8 @@
 
 Portfólio pessoal e currículo interativo desenvolvido com estética retro-terminal, animações em WebGL e integração com APIs REST. Projeto criado para a disciplina de Desenvolvimento Web (Sistemas para Internet - UNICAP).
 
+https://portifolio-nine-chi-98.vercel.app/
+
 ## Links do Projeto
 
 - **Aplicação Online (Vercel):** [Insira aqui o link do seu deploy na Vercel]
@@ -40,4 +42,3 @@ Na seção **Sobre (`API::NEKO_TERMINAL`)**, o sistema realiza requisições ass
 - **Three.js / Shaders:** Renderização gráfica do plano de fundo interativo no banner principal.
 
 ---
-RODANDO EM: https://portifolio-nine-chi-98.vercel.app/
