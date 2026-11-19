@@ -24,7 +24,7 @@ export default function Formacao() {
       
       <div className="mb-12 border-b border-zinc-800 pb-4">
         <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tighter text-white">
-          <span className="text-zinc-600 mr-2">{'>'}</span>Formação_
+          <span className="text-zinc-600 mr-2">{'>'}</span>Acadêmico_
         </h2>
       </div>
 
